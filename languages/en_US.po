@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Uni CPO Enquiries\n"
+"POT-Creation-Date: 2020-12-21 22:17+0100\n"
+"PO-Revision-Date: 2020-12-21 22:17+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-uni-cpo-enquiries.php:25 class-uni-cpo-enquiries.php:35
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:82
+msgid "Send inquiry"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:105 includes/uni-cpo-enqrs-functions.php:67
+msgid "Name"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:106 includes/uni-cpo-enqrs-functions.php:68
+msgid "Email"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:107 includes/uni-cpo-enqrs-functions.php:69
+msgid "Phone"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:108 includes/uni-cpo-enqrs-functions.php:70
+msgid "Notes"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:109
+msgid "Submit"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:110
+msgid "Inquiry form"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:125
+msgid "Enable \"send inquiry\""
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:126
+msgid "Enable \"send inquiry\" functionality for this specific product."
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:133
+msgid "Custom \"add to cart\" button label"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:134
+msgid ""
+"Set your own label instead of default \"Send inquiry\" when using \"send "
+"inquiry\" functionality"
+msgstr ""
+
+#: includes/class-uni-cpo-enqrs-ajax.php:107
+msgid "Successfully sent!"
+msgstr ""
+
+#: includes/class-uni-cpo-enqrs-ajax.php:109
+msgid "Error!"
+msgstr ""
+
+#: includes/uni-cpo-enqrs-functions.php:65
+msgid "new inquiry"
+msgstr ""
+
+#: includes/uni-cpo-enqrs-functions.php:71
+msgid "Options"
+msgstr ""
