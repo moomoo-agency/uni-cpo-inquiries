@@ -8,10 +8,12 @@ function uni_enqrs_get_nice_options_data( $filtered_form_data ) {
 
 	if ( ! empty( $filtered_form_data ) ) {
 		$posts = uni_cpo_get_posts_by_slugs( array_keys( $filtered_form_data ) );
+
 		if ( ! empty( $posts ) ) {
 			$posts_ids = wp_list_pluck( $posts, 'ID' );
 			foreach ( $posts_ids as $post_id ) {
 				$option = uni_cpo_get_option( $post_id );
+
 				if ( is_object( $option ) ) {
 					$slug             = $option->get_slug();
 					$display_key      = uni_cpo_sanitize_label( $option->cpo_order_label() );

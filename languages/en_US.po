@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Uni CPO Enquiries\n"
-"POT-Creation-Date: 2020-12-21 22:17+0100\n"
-"PO-Revision-Date: 2020-12-21 22:17+0100\n"
+"POT-Creation-Date: 2020-12-23 10:11+0100\n"
+"PO-Revision-Date: 2020-12-23 10:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -20,50 +20,58 @@ msgstr ""
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:82
+#: class-uni-cpo-enquiries.php:83
 msgid "Send inquiry"
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:105 includes/uni-cpo-enqrs-functions.php:67
+#: class-uni-cpo-enquiries.php:107 includes/uni-cpo-enqrs-functions.php:69
 msgid "Name"
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:106 includes/uni-cpo-enqrs-functions.php:68
+#: class-uni-cpo-enquiries.php:108 includes/uni-cpo-enqrs-functions.php:70
 msgid "Email"
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:107 includes/uni-cpo-enqrs-functions.php:69
+#: class-uni-cpo-enquiries.php:109 includes/uni-cpo-enqrs-functions.php:71
 msgid "Phone"
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:108 includes/uni-cpo-enqrs-functions.php:70
+#: class-uni-cpo-enquiries.php:110 includes/uni-cpo-enqrs-functions.php:72
 msgid "Notes"
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:109
+#: class-uni-cpo-enquiries.php:111
 msgid "Submit"
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:110
+#: class-uni-cpo-enquiries.php:112
 msgid "Inquiry form"
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:125
+#: class-uni-cpo-enquiries.php:127
 msgid "Enable \"send inquiry\""
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:126
+#: class-uni-cpo-enquiries.php:128
 msgid "Enable \"send inquiry\" functionality for this specific product."
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:133
-msgid "Custom \"add to cart\" button label"
+#: class-uni-cpo-enquiries.php:135
+msgid "Custom \"send inquiry\" button label"
 msgstr ""
 
-#: class-uni-cpo-enquiries.php:134
+#: class-uni-cpo-enquiries.php:136
 msgid ""
 "Set your own label instead of default \"Send inquiry\" when using \"send "
 "inquiry\" functionality"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:143
+msgid "Disable \"add to cart\" button"
+msgstr ""
+
+#: class-uni-cpo-enquiries.php:144
+msgid "Disable adding to cart functionality and hide \"add to cart\" button"
 msgstr ""
 
 #: includes/class-uni-cpo-enqrs-ajax.php:107
@@ -74,10 +82,18 @@ msgstr ""
 msgid "Error!"
 msgstr ""
 
-#: includes/uni-cpo-enqrs-functions.php:65
+#: includes/enquiry.php:8
+msgid "Hi,"
+msgstr ""
+
+#: includes/enquiry.php:9
+msgid "A new submission on your site:"
+msgstr ""
+
+#: includes/uni-cpo-enqrs-functions.php:67
 msgid "new inquiry"
 msgstr ""
 
-#: includes/uni-cpo-enqrs-functions.php:71
+#: includes/uni-cpo-enqrs-functions.php:73
 msgid "Options"
 msgstr ""

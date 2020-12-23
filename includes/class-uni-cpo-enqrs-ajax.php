@@ -98,15 +98,15 @@ class Uni_Cpo_Enqrs_Ajax {
 	public static function uni_cpo_enqrs_create_enquiry() {
 		try {
 			if ( ! empty( $_POST['json'] ) ) {
-				$data = stripslashes_deep($_POST['json']);
-				$data = json_decode($data, true);
+				$data            = stripslashes_deep( $_POST['json'] );
+				$data            = json_decode( $data, true );
 				$data['options'] = uni_enqrs_get_nice_options_data( $data['options'] );
 
-				uni_enqrs_send_email($data);
+				uni_enqrs_send_email( $data );
 
-				wp_send_json_success( array( 'message' => __('Successfully sent!', 'uni-cpo-enqrs') ) );
+				wp_send_json_success( array( 'message' => __( 'Successfully sent!', 'uni-cpo-enqrs' ) ) );
 			} else {
-				wp_send_json_error( array( 'error' => __('Error!', 'uni-cpo-enqrs') ) );
+				wp_send_json_error( array( 'error' => __( 'Error!', 'uni-cpo-enqrs' ) ) );
 			}
 		} catch ( Exception $e ) {
 			wp_send_json_error( array( 'error' => $e->getMessage() ) );

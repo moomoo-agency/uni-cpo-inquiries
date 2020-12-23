@@ -75,8 +75,9 @@ final class Uni_Cpo_Enqrs {
 	function load_scripts() {
 		if ( is_singular( 'product' ) ) {
 			global $post;
-			$is_enabled = get_post_meta( $post->ID, 'uni_cpo_enqrs_enable', true );
-			$btn_label  = get_post_meta( $post->ID, 'uni_cpo_enqrs_btn_label', true );
+			$is_enabled              = get_post_meta( $post->ID, 'uni_cpo_enqrs_enable', true );
+			$btn_label               = get_post_meta( $post->ID, 'uni_cpo_enqrs_btn_label', true );
+			$is_disabled_add_to_cart = get_post_meta( $post->ID, 'uni_cpo_enqrs_disable_add_to_cart', true );
 
 			if ( empty( $btn_label ) ) {
 				$btn_label = __( 'Send inquiry', 'uni-cpo-enqrs' );
@@ -101,13 +102,14 @@ final class Uni_Cpo_Enqrs {
 				wp_enqueue_script( 'uni-cpo-enqrs-script' );
 
 				$enqrsData = [
-					'btnLabel'  => $btn_label,
-					'name'      => __( 'Name', 'uni-cpo-enqrs' ),
-					'email'     => __( 'Email', 'uni-cpo-enqrs' ),
-					'phone'     => __( 'Phone', 'uni-cpo-enqrs' ),
-					'notes'     => __( 'Notes', 'uni-cpo-enqrs' ),
-					'submit'    => __( 'Submit', 'uni-cpo-enqrs' ),
-					'formTitle' => __( 'Inquiry form', 'uni-cpo-enqrs' )
+					'btnLabel'         => $btn_label,
+					'disableAddToCart' => $is_disabled_add_to_cart,
+					'name'             => __( 'Name', 'uni-cpo-enqrs' ),
+					'email'            => __( 'Email', 'uni-cpo-enqrs' ),
+					'phone'            => __( 'Phone', 'uni-cpo-enqrs' ),
+					'notes'            => __( 'Notes', 'uni-cpo-enqrs' ),
+					'submit'           => __( 'Submit', 'uni-cpo-enqrs' ),
+					'formTitle'        => __( 'Inquiry form', 'uni-cpo-enqrs' )
 				];
 
 				wp_localize_script( 'uni-cpo-enqrs-script', 'enqrsData', $enqrsData );
@@ -130,8 +132,16 @@ final class Uni_Cpo_Enqrs {
 		woocommerce_wp_text_input(
 			array(
 				'id'          => 'uni_cpo_enqrs_btn_label',
-				'label'       => __( 'Custom "add to cart" button label', 'uni-cpo-enqrs' ),
+				'label'       => __( 'Custom "send inquiry" button label', 'uni-cpo-enqrs' ),
 				'description' => __( 'Set your own label instead of default "Send inquiry" when using "send inquiry" functionality', 'uni-cpo-enqrs' ),
+			)
+		);
+
+		woocommerce_wp_checkbox(
+			array(
+				'id'          => 'uni_cpo_enqrs_disable_add_to_cart',
+				'label'       => __( 'Disable "add to cart" button', 'uni-cpo-enqrs' ),
+				'description' => __( 'Disable adding to cart functionality and hide "add to cart" button', 'uni-cpo-enqrs' ),
 			)
 		);
 	}
@@ -148,6 +158,8 @@ final class Uni_Cpo_Enqrs {
 		$product->update_meta_data( 'uni_cpo_enqrs_enable', sanitize_text_field( $enable ) );
 		$label = isset( $_POST['uni_cpo_enqrs_btn_label'] ) ? $_POST['uni_cpo_enqrs_btn_label'] : '';
 		$product->update_meta_data( 'uni_cpo_enqrs_btn_label', sanitize_text_field( $label ) );
+		$disable_add_to_cart = isset( $_POST['uni_cpo_enqrs_disable_add_to_cart'] ) ? 'yes' : 'no';
+		$product->update_meta_data( 'uni_cpo_enqrs_disable_add_to_cart', sanitize_text_field( $disable_add_to_cart ) );
 
 		$product->save();
 
