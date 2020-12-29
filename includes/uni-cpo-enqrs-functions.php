@@ -62,7 +62,7 @@ function uni_enqrs_get_nice_options_data( $filtered_form_data ) {
 	return $formatted;
 }
 
-function uni_enqrs_send_email( $data ) {
+function uni_enqrs_send_email( $data, $pid = 0 ) {
 	$admin_email   = get_bloginfo( 'admin_email' );
 	$admin_subject = __( 'new inquiry', 'uni-cpo-enqrs' );
 	$email_vars    = [
@@ -70,7 +70,9 @@ function uni_enqrs_send_email( $data ) {
 		'email_desc'   => __( 'Email', 'uni-cpo-enqrs' ),
 		'phone_desc'   => __( 'Phone', 'uni-cpo-enqrs' ),
 		'notes_desc'   => __( 'Notes', 'uni-cpo-enqrs' ),
-		'options_desc' => __( 'Options', 'uni-cpo-enqrs' )
+		'options_desc' => __( 'Options', 'uni-cpo-enqrs' ),
+		'product_desc' => __( 'Product', 'uni-cpo-enqrs' ),
+		'title'        => $pid ? get_the_title( $pid ) : ''
 	];
 
 	foreach ( $data as $k => $v ) {

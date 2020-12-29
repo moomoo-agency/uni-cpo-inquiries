@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 final class Uni_Cpo_Enqrs {
 
-	public $version = '1.0.0';
+	public $version = '1.0.2';
 
 	protected static $_instance = null;
 

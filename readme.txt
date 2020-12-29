@@ -30,6 +30,9 @@ Adds "send inquiry" functionality
 
 == Changelog ==
 
+= 1.0.2 =
+* Added: product title is shown in the email
+
 = 1.0.1 =
 * Fixed: names of settings
 * Added: new setting that disables "add to cart" btn

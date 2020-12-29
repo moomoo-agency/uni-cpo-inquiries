@@ -10,6 +10,7 @@
     <p><?php echo $name_desc; ?>: <?php echo $name; ?></p>
     <p><?php echo $email_desc; ?>: <?php echo $email; ?></p>
     <p><?php echo $phone_desc; ?>: <?php echo $phone; ?></p>
+    <p><?php echo $product_desc; ?>: <?php echo $title; ?></p>
     <p><?php echo $options_desc; ?>:</p>
     <ul>
         <?php foreach ( $options as $option ): ?>

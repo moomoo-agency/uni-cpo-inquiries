@@ -3,7 +3,7 @@
  * Plugin Name: Uni CPO Inquiries
  * Plugin URI: https://builderius.io
  * Description: Adds 'request inquiry' form on the product page.
- * Version: 1.0.0
+ * Version: 1.0.2
  * Author: MooMoo Agency
  * Author URI: http://moomoo.agency
  * Domain Path: /languages/

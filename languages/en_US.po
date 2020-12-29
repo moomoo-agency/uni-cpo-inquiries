@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Uni CPO Enquiries\n"
-"POT-Creation-Date: 2020-12-23 10:11+0100\n"
-"PO-Revision-Date: 2020-12-23 10:12+0100\n"
+"POT-Creation-Date: 2020-12-29 15:30+0100\n"
+"PO-Revision-Date: 2020-12-29 15:31+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -96,4 +96,8 @@ msgstr ""
 
 #: includes/uni-cpo-enqrs-functions.php:73
 msgid "Options"
+msgstr ""
+
+#: includes/uni-cpo-enqrs-functions.php:74
+msgid "Product"
 msgstr ""

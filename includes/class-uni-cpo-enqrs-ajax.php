@@ -102,7 +102,7 @@ class Uni_Cpo_Enqrs_Ajax {
 				$data            = json_decode( $data, true );
 				$data['options'] = uni_enqrs_get_nice_options_data( $data['options'] );
 
-				uni_enqrs_send_email( $data );
+				uni_enqrs_send_email( $data, $_POST['pid'] );
 
 				wp_send_json_success( array( 'message' => __( 'Successfully sent!', 'uni-cpo-enqrs' ) ) );
 			} else {
